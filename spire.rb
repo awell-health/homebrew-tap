@@ -5,23 +5,23 @@
 class Spire < Formula
   desc "Coordination hub for AI agents across repositories"
   homepage "https://github.com/awell-health/spire"
-  version "0.20.0"
+  version "0.20.1"
   license "Apache-2.0"
 
   depends_on "beads"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/awell-health/spire/releases/download/v0.20.0/spire_darwin_amd64.tar.gz"
-      sha256 "5ba0ad43275d60423332dd31a1bcbffa51d3f4e5bb2fc7f769c9471e08f86d80"
+      url "https://github.com/awell-health/spire/releases/download/v0.20.1/spire_darwin_amd64.tar.gz"
+      sha256 "47e59bde29d108be1f30e6a1ca7f3b58dbb6239918ac1cc29d100a15149768c8"
 
       define_method(:install) do
         bin.install "spire"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/awell-health/spire/releases/download/v0.20.0/spire_darwin_arm64.tar.gz"
-      sha256 "c173224796846905dd1387e471212afe827cf656a2ad09d607a97af52ed2207a"
+      url "https://github.com/awell-health/spire/releases/download/v0.20.1/spire_darwin_arm64.tar.gz"
+      sha256 "4b491e6a64b33454bbfe7d24774b318a1701be54a078a07e8a0cbc601576619c"
 
       define_method(:install) do
         bin.install "spire"
@@ -31,15 +31,15 @@ class Spire < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/awell-health/spire/releases/download/v0.20.0/spire_linux_amd64.tar.gz"
-      sha256 "28cf082b8a07a8a2a6f79b3ea51e4b8d8a3b8da013f4339ee3a6abb4628a6b7a"
+      url "https://github.com/awell-health/spire/releases/download/v0.20.1/spire_linux_amd64.tar.gz"
+      sha256 "168ffc2f23614eb3a4b056d9e696fa9fabed8fb74a2354630c4d5f025f9deff2"
       define_method(:install) do
         bin.install "spire"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/awell-health/spire/releases/download/v0.20.0/spire_linux_arm64.tar.gz"
-      sha256 "6f42c5b0f3576680b9ed2c92884fa04215f19e1c2bdb6de2e73919fa1173ef98"
+      url "https://github.com/awell-health/spire/releases/download/v0.20.1/spire_linux_arm64.tar.gz"
+      sha256 "ec688f6fca87cef7abda05cd962dc14b3e9cca82c0f703512b77b8025d5ececc"
       define_method(:install) do
         bin.install "spire"
       end
