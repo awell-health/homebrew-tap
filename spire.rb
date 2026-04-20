@@ -13,7 +13,7 @@ class Spire < Formula
 
   if Hardware::CPU.intel?
     url "https://github.com/awell-health/spire/releases/download/v0.45.0/spire_darwin_amd64.tar.gz"
-    sha256 "6477cca6cd076c2318cd4e716fadf92cc449f9b8653afc00da34775b8c02126d"
+    sha256 "c1c2f174a264b754dfc3400c1aecf9e63fda50d6e37c50777a889cfd92726857"
 
     define_method(:install) do
       bin.install "spire"
@@ -21,7 +21,7 @@ class Spire < Formula
   end
   if Hardware::CPU.arm?
     url "https://github.com/awell-health/spire/releases/download/v0.45.0/spire_darwin_arm64.tar.gz"
-    sha256 "5f226b8dcc229180dda8cac9fd3482ab47f49c528707fb386f4f4398daacc618"
+    sha256 "d4f8a87eae11859d5314ec4808b38d3d189fdb2b018cd415bd7f97e30841dcce"
 
     define_method(:install) do
       bin.install "spire"
