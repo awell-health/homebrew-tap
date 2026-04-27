@@ -5,23 +5,23 @@
 class Spire < Formula
   desc "Coordination hub for AI agents across repositories"
   homepage "https://github.com/awell-health/spire"
-  version "0.47.0"
+  version "0.48.0"
   license "Apache-2.0"
 
   depends_on "beads"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/awell-health/spire/releases/download/v0.47.0/spire_darwin_amd64.tar.gz"
-    sha256 "88278c2d1f75c5cd561d4224b760837d9a592e303391fe3848a3590f3fd5eb55"
+    url "https://github.com/awell-health/spire/releases/download/v0.48.0/spire_darwin_amd64.tar.gz"
+    sha256 "dbdc9c6a2ccce9251d2e0f7e1b501e4ab535e48211a35e7a016a78bafe8c8b1a"
 
     define_method(:install) do
       bin.install "spire"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/awell-health/spire/releases/download/v0.47.0/spire_darwin_arm64.tar.gz"
-    sha256 "bd058e7f37a1b43e8dc2f77b461928016866ac2f390a864f8902eb7b2c7ac1bf"
+    url "https://github.com/awell-health/spire/releases/download/v0.48.0/spire_darwin_arm64.tar.gz"
+    sha256 "0021dc3f5c54b6e94e2845e2873c7f68b937d244196ec3b427447ee6772d2fbe"
 
     define_method(:install) do
       bin.install "spire"
